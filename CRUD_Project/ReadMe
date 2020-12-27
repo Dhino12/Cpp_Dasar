@@ -1,0 +1,39 @@
+/*Tested in : 
+  !▽ Hanya Untuk Windows ▽!
+1. Windows 10 (vs_code)(MingW-64(6.3.0)) 
+*/
+
+//hanya merubah struct dengan ini :
+
+struct Mahasiswa{
+    int pk; /* Primery Key*/
+    char nim[100];
+    char nama[100];
+    char jurusan[100];
+    /* data */
+};
+//lalu rubah semua yang getline(cin ,variable); dengan 
+cin.get(namastruct.variable ,jumlah array); 
+
+//ditambah dengan disetiap selesai penulisan cin.get
+cin.ignore(numeric_limits<streamsize>::max(),'\n');
+//Dan Masih Banyak lagi :v
+    
+//lalu menambahkan :
+
+struct Mahasiswa2{ 
+    string nim;
+    string nama;
+    string jurusan;
+    /* data */
+}; 
+//Dan Masih Banyak lagi :v
+//prototype
+void writeData2(fstream &data, int posisi ,Mahasiswa2 &inputMahasiswa);
+
+// Default_Argument
+void writeData2(fstream &data, int posisi ,Mahasiswa2 &inputMahasiswa){
+    data.seekp((posisi - 1)*sizeof(Mahasiswa),ios::beg);
+    data.write(reinterpret_cast<char*>(&inputMahasiswa),sizeof(Mahasiswa));
+}
+//.. udah cuman itu :v ,ya intinya itu ,:v 

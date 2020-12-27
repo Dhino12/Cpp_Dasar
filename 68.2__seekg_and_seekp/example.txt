@@ -1,0 +1,2 @@
+Ini file bikinnya manual bukan dengan 
+myfile.open("example.txt",ios::out);

@@ -1,0 +1,11 @@
+ini adalah file external.
+dan ini baris kedua .
+file ini dibuat manual (tanpa ofstream)
+
+data
+No      Nama
+1       Dhino
+2       Rahmad
+3       Kusuma
+4       The     
+5       Bannana
